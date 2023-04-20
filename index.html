@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" class="form">
+    <h2>Registration Form</h2>
+
+    <div class="text">
+        <div class="box">
+            <label>FirstName</label>
+            <input type="text" name="firstname" id="firstname">
+            <small>e</small>
+        </div>
+    
+        <div class="box">
+            <label>LastName</label>
+            <input type="text" name="lastname" id="lastname">
+            <small>e</small>
+        </div>
+    
+        <div class="box">
+            <label>Email</label>
+            <input type="text" name="email" id="email">
+            <small>e</small>
+        </div>
+    
+        <div class="box">
+            <label>Password</label>
+            <input type="password" name="password" id="password">
+            <small>e</small>
+        </div>
+    
+        <div class="box">
+            <label>Mobile Phone</label>
+            <input type="text" name="mobile" id="mobile">
+            <small>e</small>
+        </div>
+    </div>
+
+    <div class="box-spc">
+        <label>Gender</label>
+        <div class="form-inline-gender" id="gender">
+            <label><input type="radio" name="gender" id="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" id="gender" value="female">Female</label>
+            <label><input type="radio" name="gender" id="gender" value="custom">Custom</label>
+        </div>
+        </select>
+    </div>
+
+    <div class="box-spc">
+        <label>Skill</label>
+        <div class="form-inline-skill" id="skill"></div>
+            <label><input type="checkbox" name="skill" value="javascript" id="javascript">Javascript</label>
+            <label><input type="checkbox" name="skill" value="python" id="python">Python</label>
+            <label><input type="checkbox" name="skill" value="java" id="java">Java</label>
+            <label><input type="checkbox" name="skill" value="ruby" id="ruby">Ruby</label>
+        </div>
+    </div>
+
+    <div class="box-spc">
+        <label>Experience</label>
+       <select name="experience" id="experience">
+            <option value="">New graduate</option>
+            <option value="">1 year</option>
+            <option value="">2-4 years</option>
+            <option value="">5-8 years</option>
+            <option value="">8 years or more</option>
+       </select>
+    </div>
+
+    <button type="submit">Register</button>
+
+    </form>
+
+ <script src="script.js"></script>   
+
+</body>
+</html>

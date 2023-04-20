@@ -1,0 +1,70 @@
+body{
+    font-size: 16px;
+    font-family: system-ui;
+    background: -webkit-radial-gradient(top left,#90f6fb,#2c3283);
+}
+h2{
+    text-align: center;
+    color:royalblue;
+}
+form{
+    width: 300px;
+    padding: 40px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin: auto auto;
+}
+label{
+    display: block;
+}
+label i {
+    color: #999;
+    font-size: 80%;
+}
+.box{
+    padding-bottom: 35px;
+}
+.box-spc{
+    padding-bottom: 20px;
+}
+.text>.box>input,select{
+    cursor: pointer;
+    width: 100%;
+    border: 0.5px solid #ccc;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #a9bae64a;
+}
+input:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: royalblue;
+    color: white;
+    font-size: 18px;
+}
+.box.error input{
+    border-width: 2.5px;
+    border-color: red;
+}
+.box.success input{
+    border-width: 2.5px;
+    border-color: green;
+}
+.box small{
+    color: red;
+    position: absolute;
+    visibility: hidden;
+}
+.box.error small{
+    visibility: visible;
+}
