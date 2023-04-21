@@ -14,12 +14,16 @@ form.addEventListener('submit',function(e){
 
     if(firstname.value === ''){
         showError(firstname,'Firstname is required')
+    }else if(!validateEngChar(firstname.value)){
+        showError(firstname,'Firstname must be in English only')
     }else{
         showSuccess(firstname)
     }
 
     if(lastname.value === ''){
         showError(lastname,'Lastname is required')
+    }else if(!validateEngChar(lastname.value)){
+        showError(lastname,'Lastname must be in English only')
     }else{
         showSuccess(lastname)
     }
@@ -70,5 +74,10 @@ function validateEmail(email){
 function validateMobile(mobile) {
     var patt = new RegExp(/^s*?\(?\d{3}(?:\)|[-|\s])?\s*?\d{3}[-|\s]?\d{4}$/);
     return patt.test(mobile);
+}
+
+function validateEngChar(input){
+    const re = /[A-Za-z]/
+    return re.test(String(input))
 }
 
